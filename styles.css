@@ -1,51 +1,38 @@
 body {
-    overflow: hidden;
-    margin: 0px;
+  overflow-x: hidden;
+  margin: 0px;
+  font-family: monospace;
+  color: white;
 }
 
-.header {
-    font-size: 3em;
-    color: white;
-    background: #404040;
-    text-align: center;
-    height: 2.5em;
-    text-shadow: 4px 4px 4px black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #error {
-    font-size: 2em;
-    color: red;
-    height: 50px;
-    text-shadow: 2px 2px 2px black;
-    margin: 2em;
-    display: none;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .visible {
-    display: block;
-  }
-  
-  #target {
-    width: 100% !important;
-    height: 100% !important;
-    position: absolute;
-  }
-  
-  body {
-    background: #000000;
-    margin: 0;
-    padding: 0;
-    overscroll-behavior: none;
-  }
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
-  
+main {
+  width: 100vw;
+  height: 200vw;
+  z-index: 99;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  pointer-events: none;
+  font-size: 5vh;
+}
+
+section {
+  min-height: 100vh;
+  padding: 20px;
+  font-size: 4vh;
+}
+
+#scrollProgress {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 99;
+  font-size: 3vh;
+}
+
