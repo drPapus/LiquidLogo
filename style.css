@@ -2,8 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 html, body {
-  margin: 0;
-  height: 100%;
+  overflow-x: hidden;
+  margin: 0px;
+  font-family: monospace;
+  color: white;
 }
 #bg {
 width: 100%;
@@ -230,4 +232,12 @@ canvas {
 }
 .progress-line.mysql span::after{
   content: "25%";
+}
+
+#scrollProgress {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 99;
+  font-size: 3vh;
 }
